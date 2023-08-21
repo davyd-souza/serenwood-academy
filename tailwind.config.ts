@@ -15,6 +15,13 @@ const config: Config = {
       minHeight: {
         'screen-d': '100dvh',
       },
+
+      colors: {
+        sky: {
+          25: '#FAFDFF',
+          975: '#062133',
+        },
+      },
     },
   },
   plugins: [],
