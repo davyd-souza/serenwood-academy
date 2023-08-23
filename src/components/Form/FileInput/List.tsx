@@ -2,6 +2,7 @@
 
 // DEPENDENCY
 import { useFileInput } from './Root'
+import { useAutoAnimate } from '@formkit/auto-animate/react'
 
 // ASSET
 import { Trash2, UploadCloud } from 'lucide-react'
@@ -11,9 +12,10 @@ import { formatBytes } from '@/utils/formatBytes'
 
 export function FileInputList() {
   const { files } = useFileInput()
+  const [parent] = useAutoAnimate()
 
   return (
-    <div className="mt-4 space-y-3">
+    <div className="mt-4 space-y-3" ref={parent}>
       {files.map(({ name, size }) => (
         <article
           key={name}
