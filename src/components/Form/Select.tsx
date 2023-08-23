@@ -48,7 +48,9 @@ const SelectContent = forwardRef<
     <Select.Content
       ref={ref}
       className={cn(
-        'group relative z-50 w-[var(--radix-select-trigger-width)] overflow-hidden rounded-lg border border-zinc-300 bg-white shadow-md dark:border-zinc-600 dark:bg-zinc-900 dark:shadow-zinc-700',
+        'data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[side=bottom]:slide-in-from-top-1 data-[side=left]:slide-in-from-right-1 data-[side=right]:slide-in-from-left-1 data-[side=top]:slide-in-from-bottom-1 group relative z-50 w-[var(--radix-select-trigger-width)] overflow-hidden rounded-lg border border-zinc-300 bg-white shadow-sm dark:border-zinc-600 dark:bg-zinc-900 dark:shadow-zinc-700',
+        position === 'popper' &&
+          'data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1',
         className,
       )}
       position={position}
