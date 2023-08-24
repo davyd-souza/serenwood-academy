@@ -12,7 +12,7 @@ export function InputRoot({ children, className }: InputRootProps) {
   return (
     <div
       className={cn(
-        'flex items-center gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm dark:border-zinc-600',
+        'flex items-center gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm transition-colors focus-within:border-sky-400 focus-within:ring-4 focus-within:ring-sky-50 dark:border-zinc-600 dark:shadow-zinc-700 dark:focus-within:border-sky-700 dark:focus-within:ring-sky-950',
         className,
       )}
     >

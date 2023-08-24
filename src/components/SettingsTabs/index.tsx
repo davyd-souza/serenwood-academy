@@ -2,8 +2,11 @@
 
 // DEPENDENCY
 import * as Tabs from '@radix-ui/react-tabs'
-import { TabItem } from './TabItem'
 import { useState } from 'react'
+
+// COMPONENT
+import { TabItem } from './TabItem'
+import { MyDetailsTab } from './MyDetailsTab'
 
 export function SettingsTabs() {
   const [currentTab, setCurrentTab] = useState('my-details')
@@ -14,7 +17,7 @@ export function SettingsTabs() {
 
   return (
     <Tabs.Root value={currentTab} onValueChange={handleTabChange}>
-      <Tabs.List className="flex items-center gap-4 border-b border-zinc-200 dark:border-zinc-700">
+      <Tabs.List className="flex items-center gap-4 border-b border-zinc-200 dark:border-zinc-800">
         <TabItem
           title="My details"
           value="my-details"
@@ -48,7 +51,9 @@ export function SettingsTabs() {
           isSelected={currentTab === 'integrations'}
         />
       </Tabs.List>
-      <Tabs.Content></Tabs.Content>
+      <Tabs.Content value="my-details">
+        <MyDetailsTab />
+      </Tabs.Content>
     </Tabs.Root>
   )
 }

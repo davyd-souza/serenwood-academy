@@ -1,4 +1,5 @@
 // COMPONENT
+import { InputField, InputPrefix, InputRoot } from '../Form/Input'
 import { Logo } from './Logo'
 import { NavItem } from './NavItem'
 import { Profile } from './Profile'
@@ -19,17 +20,15 @@ import {
 
 export function Sidebar() {
   return (
-    <aside className="flex flex-col gap-6 border-r border-zinc-200 px-5 py-8 dark:border-zinc-700">
+    <aside className="flex flex-col gap-6 border-r border-zinc-200 px-5 py-8 dark:border-zinc-800">
       <Logo />
 
-      <div className="mx-3 flex items-center gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm dark:border-zinc-600">
-        <Search className="h-5 min-h-max w-5 min-w-max text-zinc-500 dark:text-zinc-400" />
-        <input
-          type="text"
-          className="w-full bg-transparent p-0 placeholder-zinc-600 outline-none dark:text-zinc-100 dark:placeholder-zinc-500"
-          placeholder="Search"
-        />
-      </div>
+      <InputRoot className="mx-3">
+        <InputPrefix asChild>
+          <Search className="h-5 min-h-max w-5 min-w-max text-zinc-500 dark:text-zinc-400" />
+        </InputPrefix>
+        <InputField type="text" placeholder="Search" />
+      </InputRoot>
 
       <nav className="space-y-1">
         <NavItem title="Home" icon={Home} />
@@ -48,7 +47,7 @@ export function Sidebar() {
 
         <UsedSpaceWidget />
 
-        <div className="h-px bg-zinc-200 dark:bg-zinc-700" />
+        <div className="h-px bg-zinc-200 dark:bg-zinc-800" />
 
         <Profile />
       </div>
