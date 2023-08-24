@@ -7,6 +7,7 @@ import {
   FileInputImagePreview,
   FileInputList,
 } from '@/components/Form/FileInput'
+import { Button } from '@/components/Button'
 import { CountrySelect } from '@/app/(home)/CountrySelect'
 import { TimezoneSelect } from '@/app/(home)/TimezoneSelect'
 import { BioTextEditor } from '@/app/(home)/BioTextEditor'
@@ -25,18 +26,12 @@ export function MyDetailsTab() {
           </p>
         </div>
         <div className="flex items-center gap-3">
-          <button
-            type="button"
-            className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-medium transition-colors hover:bg-zinc-50 dark:border-zinc-700 dark:hover:bg-zinc-800"
-          >
+          <Button variant="outline" type="button">
             Cancel
-          </button>
-          <button
-            type="submit"
-            className="rounded-lg bg-sky-500 px-4 py-2 text-sm font-medium text-zinc-100 transition-colors hover:bg-sky-400 dark:bg-sky-400 dark:text-zinc-900"
-          >
+          </Button>
+          <Button type="submit" form="my-details">
             Save
-          </button>
+          </Button>
         </div>
       </header>
 
@@ -141,18 +136,12 @@ export function MyDetailsTab() {
       </form>
 
       <footer className="flex items-center justify-end gap-3 border-t border-zinc-200 pt-4 dark:border-zinc-700">
-        <button
-          type="button"
-          className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-medium transition-colors hover:bg-zinc-50 dark:border-zinc-700 dark:hover:bg-zinc-800"
-        >
+        <Button variant="outline" type="button">
           Cancel
-        </button>
-        <button
-          type="submit"
-          className="rounded-lg bg-sky-500 px-4 py-2 text-sm font-medium text-zinc-100 transition-colors hover:bg-sky-400 dark:bg-sky-400 dark:text-zinc-900"
-        >
+        </Button>
+        <Button type="submit" form="my-details">
           Save
-        </button>
+        </Button>
       </footer>
     </section>
   )

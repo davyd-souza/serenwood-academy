@@ -1,4 +1,5 @@
 // COMPONENT
+import { Button } from '@/components/Button'
 import {
   SelectContent,
   SelectItem,
@@ -27,21 +28,21 @@ export function BioTextEditor() {
           </SelectContent>
         </SelectRoot>
         <div className="flex items-center gap-1">
-          <button className="rounded-lg p-2 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800">
+          <Button type="button" variant="ghost">
             <Bold className="h-5 w-5 text-zinc-500 dark:text-zinc-400" />
-          </button>
-          <button className="rounded-lg p-2 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800">
+          </Button>
+          <Button type="button" variant="ghost">
             <Italic className="h-5 w-5 text-zinc-500 dark:text-zinc-400" />
-          </button>
-          <button className="rounded-lg p-2 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800">
+          </Button>
+          <Button type="button" variant="ghost">
             <Link className="h-5 w-5 text-zinc-500 dark:text-zinc-400" />
-          </button>
-          <button className="rounded-lg p-2 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800">
+          </Button>
+          <Button type="button" variant="ghost">
             <List className="h-5 w-5 text-zinc-500 dark:text-zinc-400" />
-          </button>
-          <button className="rounded-lg p-2 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800">
+          </Button>
+          <Button type="button" variant="ghost">
             <ListOrdered className="h-5 w-5 text-zinc-500 dark:text-zinc-400" />
-          </button>
+          </Button>
         </div>
       </div>
       <Textarea

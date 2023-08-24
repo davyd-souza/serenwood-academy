@@ -4,6 +4,9 @@
 import { useFileInput } from './Root'
 import { useAutoAnimate } from '@formkit/auto-animate/react'
 
+// COMPONENT
+import { Button } from '@/components/Button'
+
 // ASSET
 import { Trash2, UploadCloud } from 'lucide-react'
 
@@ -41,9 +44,9 @@ export function FileInputList() {
             </div>
           </div>
 
-          <button className="ml-auto rounded-lg p-2 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800">
+          <Button type="button" variant="ghost" className="ml-auto">
             <Trash2 className="h-5 w-5 text-zinc-500 dark:text-zinc-400" />
-          </button>
+          </Button>
         </article>
       ))}
     </div>
