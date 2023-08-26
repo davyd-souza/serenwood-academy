@@ -51,7 +51,7 @@ export function SettingsTabs() {
           isSelected={currentTab === 'integrations'}
         />
       </Tabs.List>
-      <Tabs.Content value="my-details">
+      <Tabs.Content className="outline-none" value="my-details">
         <MyDetailsTab />
       </Tabs.Content>
     </Tabs.Root>
