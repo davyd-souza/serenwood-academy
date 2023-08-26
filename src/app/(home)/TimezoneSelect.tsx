@@ -16,12 +16,12 @@ import { timezones } from '@/utils/timezones'
 export function TimezoneSelect() {
   return (
     <SelectRoot name="timezone">
-      <SelectTrigger>
+      <SelectTrigger id="timezone">
         <Clock className="h-5 w-5" />
         <SelectValue placeholder="Select your timezone..." />
       </SelectTrigger>
 
-      <SelectContent>
+      <SelectContent sideOffset={4}>
         {timezones.map(({ text }) => {
           const [utc, ...timezoneName] = text.split(' ')
           const timezone = timezoneName.join(' ')

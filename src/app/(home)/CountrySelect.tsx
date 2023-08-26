@@ -31,11 +31,11 @@ export function CountrySelect() {
       value={value}
       onValueChange={handleCountryChange}
     >
-      <SelectTrigger>
+      <SelectTrigger id="country">
         <SelectValue placeholder="Select your country..." />
       </SelectTrigger>
 
-      <SelectContent>
+      <SelectContent sideOffset={4}>
         {Object.entries(countries).map(([code, title]) => (
           <SelectItem key={code} value={code}>
             <span className="flex items-center gap-2">
