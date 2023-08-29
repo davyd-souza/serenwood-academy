@@ -28,8 +28,8 @@ export function TimezoneSelect() {
 
           return (
             <SelectItem key={timezone} value={timezone}>
-              <span className="flex items-center gap-2">
-                {timezone}
+              <span>
+                {timezone}{' '}
                 <span className="text-sm text-zinc-500 dark:text-zinc-300">
                   {utc}
                 </span>
