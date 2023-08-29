@@ -1,22 +1,13 @@
 // COMPONENT
 import { InputField, InputPrefix, InputRoot } from '@/components/Form/Input'
-import { Logo } from '../Logo'
+import { Logo } from '@/components/Logo'
 import { NavItem } from './NavItem'
 import { Profile } from './Profile'
 import { UsedSpaceWidget } from './UsedSpaceWidget'
+import { Navigation } from './Navigation'
 
 // ASSET
-import {
-  BarChart,
-  CheckSquare,
-  Cog,
-  Flag,
-  Home,
-  LifeBuoy,
-  Search,
-  SquareStack,
-  Users,
-} from 'lucide-react'
+import { Cog, LifeBuoy, Search } from 'lucide-react'
 
 export function Sidebar() {
   return (
@@ -30,14 +21,7 @@ export function Sidebar() {
         <InputField type="text" placeholder="Search" />
       </InputRoot>
 
-      <nav className="space-y-1">
-        <NavItem title="Home" icon={Home} />
-        <NavItem title="Dashboard" icon={BarChart} />
-        <NavItem title="Projects" icon={SquareStack} />
-        <NavItem title="Tasks" icon={CheckSquare} />
-        <NavItem title="Reporting" icon={Flag} />
-        <NavItem title="Users" icon={Users} />
-      </nav>
+      <Navigation />
 
       <div className="mt-auto grid gap-6">
         <nav>

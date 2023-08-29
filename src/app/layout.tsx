@@ -4,7 +4,7 @@ import { ReactNode } from 'react'
 
 // COMPONENT
 import { Sidebar } from '@/components/Sidebar'
-import { MobileNav } from '@/components/MobileNav'
+import { MobileNav } from '@/components/Sidebar/MobileNav'
 
 // STYLE
 import './globals.css'
