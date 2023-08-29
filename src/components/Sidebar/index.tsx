@@ -1,6 +1,6 @@
 // COMPONENT
-import { InputField, InputPrefix, InputRoot } from '../Form/Input'
-import { Logo } from './Logo'
+import { InputField, InputPrefix, InputRoot } from '@/components/Form/Input'
+import { Logo } from '../Logo'
 import { NavItem } from './NavItem'
 import { Profile } from './Profile'
 import { UsedSpaceWidget } from './UsedSpaceWidget'
@@ -20,7 +20,7 @@ import {
 
 export function Sidebar() {
   return (
-    <aside className="flex flex-col gap-6 border-r border-zinc-200 px-5 py-8 dark:border-zinc-800">
+    <aside className="hidden border-r border-zinc-200 px-5 py-8 dark:border-zinc-800 lg:flex lg:flex-col lg:gap-6">
       <Logo />
 
       <InputRoot className="mx-3">
