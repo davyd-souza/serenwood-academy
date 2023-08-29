@@ -15,7 +15,7 @@ import { Bold, Italic, Link, List, ListOrdered } from 'lucide-react'
 export function BioTextEditor() {
   return (
     <div className="space-y-3">
-      <div className="grid grid-cols-2 gap-3">
+      <div className="flex flex-col gap-2 md:grid md:grid-cols-2 md:gap-3">
         <SelectRoot defaultValue="normal">
           <SelectTrigger>
             <SelectValue placeholder="Select text style..." />
@@ -27,6 +27,7 @@ export function BioTextEditor() {
             <SelectItem value="heading3">Heading 3</SelectItem>
           </SelectContent>
         </SelectRoot>
+
         <div className="flex items-center gap-1">
           <Button type="button" variant="ghost">
             <Bold className="h-5 w-5 text-zinc-500 dark:text-zinc-400" />
@@ -45,6 +46,7 @@ export function BioTextEditor() {
           </Button>
         </div>
       </div>
+
       <Textarea
         id="bio"
         className="resize-y"

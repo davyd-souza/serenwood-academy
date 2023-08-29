@@ -18,13 +18,14 @@ import { Mail } from 'lucide-react'
 export function MyDetailsTab() {
   return (
     <section className="space-y-6 py-8">
-      <header className="flex justify-between gap-4 border-b border-zinc-200 pb-5 dark:border-zinc-800">
+      <header className="flex flex-col justify-between gap-4 border-b border-zinc-200 pb-5 dark:border-zinc-800 md:flex-row">
         <div className="space-y-1">
           <h2 className="text-lg font-medium">Personal info</h2>
           <p className="text-sm text-zinc-500 dark:text-zinc-300">
             Update your photo and personal details here.
           </p>
         </div>
+
         <div className="flex items-center gap-3">
           <Button variant="outline" type="button">
             Cancel
@@ -39,25 +40,35 @@ export function MyDetailsTab() {
         id="my-details"
         className="flex w-full flex-col gap-5 divide-y divide-zinc-200 dark:divide-zinc-800"
       >
-        <div className="grid grid-cols-form gap-8">
+        <div className="flex flex-col gap-2 md:grid md:grid-cols-form md:gap-8">
           <label htmlFor="first-name" className="text-sm font-medium">
             Name
           </label>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="flex flex-col gap-6 md:grid md:grid-cols-2">
             <InputRoot>
               <InputField id="first-name" type="text" placeholder="Davyd" />
             </InputRoot>
 
-            <InputRoot>
-              <InputField id="last-name" type="text" placeholder="Souza" />
-            </InputRoot>
+            <div className="flex flex-col gap-2 md:block">
+              <label
+                htmlFor="last-name"
+                className="text-sm font-medium md:sr-only"
+              >
+                Last name
+              </label>
+
+              <InputRoot>
+                <InputField id="last-name" type="text" placeholder="Souza" />
+              </InputRoot>
+            </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-form gap-8 pt-5">
+        <div className="flex flex-col gap-2 pt-5 md:grid md:grid-cols-form md:gap-8">
           <label htmlFor="email" className="text-sm font-medium">
             Email address
           </label>
+
           <InputRoot>
             <InputPrefix asChild>
               <Mail className="h-5 min-h-max w-5 min-w-max text-zinc-500 dark:text-zinc-400" />
@@ -66,7 +77,7 @@ export function MyDetailsTab() {
           </InputRoot>
         </div>
 
-        <div className="grid grid-cols-form gap-8 pt-5">
+        <div className="flex flex-col gap-8 pt-5 md:grid md:grid-cols-form">
           <label htmlFor="photo" className="text-sm font-medium">
             Your photo
             <span className="block text-sm font-normal text-zinc-500 dark:text-zinc-300">
@@ -74,14 +85,14 @@ export function MyDetailsTab() {
             </span>
           </label>
 
-          <FileInputRoot className="flex items-start gap-5">
+          <FileInputRoot className="flex flex-col gap-5 md:flex-row md:items-start">
             <FileInputImagePreview />
             <FileInputTrigger />
             <FileInputControl />
           </FileInputRoot>
         </div>
 
-        <div className="grid grid-cols-form gap-8 pt-5">
+        <div className="flex flex-col gap-2 pt-5 md:grid md:grid-cols-form md:gap-8">
           <label htmlFor="role" className="text-sm font-medium">
             Role
           </label>
@@ -94,14 +105,14 @@ export function MyDetailsTab() {
           </InputRoot>
         </div>
 
-        <div className="grid grid-cols-form gap-8 pt-5">
+        <div className="flex flex-col gap-2 pt-5 md:grid md:grid-cols-form md:gap-8">
           <label htmlFor="country" className="text-sm font-medium">
             Country
           </label>
           <CountrySelect />
         </div>
 
-        <div className="grid grid-cols-form gap-8 pt-5">
+        <div className="flex flex-col gap-2 pt-5 md:grid md:grid-cols-form md:gap-8">
           <label htmlFor="timezone" className="text-sm font-medium">
             Timezone
           </label>
@@ -109,7 +120,7 @@ export function MyDetailsTab() {
           <TimezoneSelect />
         </div>
 
-        <div className="grid grid-cols-form gap-8 pt-5">
+        <div className="flex flex-col gap-2 pt-5 md:grid md:grid-cols-form md:gap-8">
           <label htmlFor="bio" className="text-sm font-medium">
             Bio
             <span className="block text-sm font-normal text-zinc-500 dark:text-zinc-300">
@@ -120,13 +131,14 @@ export function MyDetailsTab() {
           <BioTextEditor />
         </div>
 
-        <div className="grid grid-cols-form gap-8 pt-5">
+        <div className="flex flex-col gap-8 pt-5 md:grid md:grid-cols-form">
           <label htmlFor="portfolio" className="text-sm font-medium">
             Portfolio projects
             <span className="block text-sm font-normal text-zinc-500 dark:text-zinc-300">
               Share a few snippets of your work.
             </span>
           </label>
+
           <FileInputRoot>
             <FileInputTrigger />
             <FileInputList />
