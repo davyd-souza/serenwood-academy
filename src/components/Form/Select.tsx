@@ -56,12 +56,10 @@ const SelectContent = forwardRef<
       position={position}
       {...props}
     >
-      <ScrollArea.Root className="h-full w-full" type="auto">
-        <Select.Viewport className="max-h-[20rem]" asChild>
-          <ScrollArea.Viewport className="h-full w-full overflow-y-scroll">
-            {children}
-          </ScrollArea.Viewport>
-        </Select.Viewport>
+      <ScrollArea.Root className="relative overflow-hidden" type="auto">
+        <ScrollArea.Viewport className="h-full max-h-[20rem] w-full">
+          <Select.Viewport>{children}</Select.Viewport>
+        </ScrollArea.Viewport>
 
         <ScrollArea.Scrollbar
           orientation="vertical"
