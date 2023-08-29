@@ -20,7 +20,7 @@ import {
 
 export function Sidebar() {
   return (
-    <aside className="hidden border-r border-zinc-200 px-5 py-8 dark:border-zinc-800 lg:flex lg:flex-col lg:gap-6">
+    <aside className="z-20 hidden w-80 border-r border-zinc-200 px-5 py-8 dark:border-zinc-800 lg:fixed lg:inset-0 lg:flex lg:flex-col lg:gap-6">
       <Logo />
 
       <InputRoot className="mx-3">

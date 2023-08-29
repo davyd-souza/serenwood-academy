@@ -29,7 +29,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <div className="min-h-screen-d lg:grid lg:grid-cols-root">
           <Sidebar />
           <MobileNav />
-          <main className="space-y-6 px-4 py-8 pb-12">{children}</main>
+          <main className="space-y-6 px-4 py-8 pb-12 lg:col-start-2">
+            {children}
+          </main>
         </div>
       </body>
     </html>
