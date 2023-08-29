@@ -1,3 +1,5 @@
+'use client'
+
 // DEPENDENCY
 import { useFileInput } from './Root'
 
