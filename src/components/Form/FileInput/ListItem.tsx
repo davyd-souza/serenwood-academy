@@ -43,7 +43,7 @@ type ListItemProps = VariantProps<typeof fileItem> & {
   size: number
 }
 
-export function ListItem({ name, size, state = 'error' }: ListItemProps) {
+export function ListItem({ name, size, state = 'progress' }: ListItemProps) {
   const { root, icon, deleteButton } = fileItem({ state })
 
   return (
