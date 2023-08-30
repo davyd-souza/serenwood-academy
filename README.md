@@ -3,7 +3,7 @@
   Devoted to excellence in teaching, learning, and research, and to developing leaders who make a difference globally.
 </p>
 <p align="center">
-	<img src="" alt="" width="900"/>
+	<img src="https://github.com/davyd-souza/serenwood-academy/assets/54182110/1d397fa0-fc71-4d73-92f2-74c04f3d9166" alt="" width="900"/>
 </p>
 
 
@@ -77,18 +77,17 @@
 <h2 id="breakpoints">📱 Breakpoints</h2>
 
 <h3>Desktop</h3>
-
-<img src="" alt=""/>
+<img src="https://github.com/davyd-souza/serenwood-academy/assets/54182110/1d397fa0-fc71-4d73-92f2-74c04f3d9166" alt=""/>
 
 ---
 
 <h3>Tablet</h3>
-<img src="" alt=""/>
+<img src="https://github.com/davyd-souza/serenwood-academy/assets/54182110/ece2fa74-9ec4-4ef5-a3d7-79f8030a382e" alt=""/>
 
 ---
 
 <h3>Mobile</h3>
-<img src="" alt=""/>
+<img src="https://github.com/davyd-souza/serenwood-academy/assets/54182110/30bcedfa-91fb-409f-83c6-90467cba10a4" alt=""/>
 
 <h2 id="ideas">💡 Improvement Ideas</h2>
 
