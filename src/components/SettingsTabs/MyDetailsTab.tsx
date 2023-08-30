@@ -8,9 +8,9 @@ import {
   FileInputList,
 } from '@/components/Form/FileInput'
 import { Button } from '@/components/Button'
-import { CountrySelect } from '@/app/(home)/CountrySelect'
-import { TimezoneSelect } from '@/app/(home)/TimezoneSelect'
-import { BioTextEditor } from '@/app/(home)/BioTextEditor'
+import { CountrySelect } from '@/app/settings/CountrySelect'
+import { TimezoneSelect } from '@/app/settings/TimezoneSelect'
+import { BioTextEditor } from '@/app/settings/BioTextEditor'
 
 // ASSET
 import { Mail } from 'lucide-react'
