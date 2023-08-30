@@ -40,7 +40,7 @@ export function MobileNavigationTabs() {
 
               return (
                 <NavigationMenuLink
-                  className="relative flex items-center px-3 py-2 hover:bg-zinc-800 data-[active]:text-sky-600 dark:data-[active]:text-sky-300"
+                  className="relative flex items-center px-3 py-2 transition-colors hover:bg-zinc-50 data-[active]:text-sky-600 dark:hover:bg-zinc-800 dark:data-[active]:text-sky-300"
                   key={title}
                   active={isActive}
                   asChild
