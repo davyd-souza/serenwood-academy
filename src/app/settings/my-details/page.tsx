@@ -15,7 +15,7 @@ import { BioTextEditor } from '@/app/settings/BioTextEditor'
 // ASSET
 import { Mail } from 'lucide-react'
 
-export function MyDetailsTab() {
+export default function MyDetailsPage() {
   return (
     <section className="space-y-6 py-8">
       <header className="flex flex-col justify-between gap-4 border-b border-zinc-200 pb-5 dark:border-zinc-800 md:flex-row">
